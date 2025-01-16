@@ -2,6 +2,21 @@
 # vendor.prop for mt6768
 #
 
+# ART
+dalvik.vm.dex2oat64.enabled=true
+ro.vendor.qti.am.reschedule_service=true
+ro.sys.fw.dex2oat_thread_count=8
+dalvik.vm.boot-dex2oat-threads=8
+dalvik.vm.dex2oat-threads=8
+dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7
+dalvik.vm.dex2oat-filter=everything
+dalvik.vm.dex2oat-threads=8
+dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7
+dalvik.vm.image-dex2oat-filter=everything
+dalvik.vm.image-dex2oat-threads=8
+dalvik.vm.dex2oat-minidebuginfo=false
+dalvik.vm.minidebuginfo=false
+
 # ADB
 persist.adb.nonblocking_ffs=1
 
@@ -228,6 +243,9 @@ debug.sf.disable_client_composition_cache=1
 debug.sf.enable_transaction_tracing=false
 debug.sf.enable_gl_backpressure=1
 debug.sf.predict_hwc_composition_strategy=0
+ro.sf.blurs_are_expensive=1
+ro.surface_flinger.supports_background_blur=1
+debug.sf.layer_caching_active_layer_timeout_ms=1000
 
 # TEE
 ro.vendor.mtk_tee_gp_support=1
