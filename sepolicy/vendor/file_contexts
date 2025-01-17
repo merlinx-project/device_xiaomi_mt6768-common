@@ -31,3 +31,5 @@
 
 # WiFi
 /(vendor|system/vendor)/bin/hw/android\.hardware\.wifi@[0-9]\.[0-9]-service-lazy\.mt6768 		u:object_r:hal_wifi_default_exec:s0
+# Data files
+/data/per_boot(/.*)?                                                 u:object_r:per_boot_file:s0

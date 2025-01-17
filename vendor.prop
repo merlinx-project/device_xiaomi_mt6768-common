@@ -133,12 +133,9 @@ persist.vendor.vilte_support=1
 persist.vendor.viwifi_support=1
 
 # LMK
-ro.lmk.psi_complete_stall_ms=35
-ro.lmk.swap_free_low_percentage=10
-ro.lmk.psi_partial_stall_ms=35
-ro.lmk.thrashing_limit=10
-ro.lmk.thrashing_limit_decay=2
-ro.lmk.kill_timeout_ms=100
+ro.lmk.filecache_min_kb=153600
+ro.lmk.kill_timeout_ms=50
+ro.lmk.stall_limit_critical=40
 
 # MIUI
 sys.fp.miui.token=0
@@ -268,3 +265,5 @@ ro.vendor.connsys.dedicated.log=1
 
 # Zygote
 zygote.critical_window.minute=10
+# Zygote
+persist.device_config.runtime_native.usap_pool_enabled=true
