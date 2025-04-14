@@ -31,6 +31,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libalsautils_legacy \
     libtinycompress \
+    BesLoudness \
     libtinyxml \
     tinymix
 
@@ -235,6 +236,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
@@ -249,6 +251,9 @@ PRODUCT_PACKAGES += \
     TelephonyOverlayMT6768 \
     TetheringConfigOverlayMT6768 \
     WifiOverlayMT6768
+# Parts
+PRODUCT_PACKAGES += \
+    XiaomiParts
 
 # Power
 PRODUCT_PACKAGES += \
