@@ -31,7 +31,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libalsautils_legacy \
     libtinycompress \
-    BesLoudness \
     libtinyxml \
     tinymix
 
